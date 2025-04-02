@@ -7,7 +7,7 @@ const App = () => {
   const [chat, setChat] = useState([
     {
       role: { system: null },
-      content: "I'm a sovereign AI agent living on the Internet Computer. Ask me anything.",
+      content: "I'm a Delex AI agent ready to help with you legal matters .How can I help ?.",
       timestamp: new Date()
     }
   ]);
@@ -116,7 +116,7 @@ const App = () => {
       {/* Header with dark mode toggle */}
       <header className={`p-4 border-b ${darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'}`}>
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold">AI Legal Assistant</h1>
+          <h1 className="text-xl font-bold">Delex Legal Agent</h1>
           <button 
             onClick={() => setDarkMode(!darkMode)}
             className={`p-2 rounded-full ${darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-200 hover:bg-gray-300'}`}
@@ -294,7 +294,7 @@ const App = () => {
                   className={`flex-1 rounded-l-lg border p-3 focus:outline-none focus:ring-2 ${darkMode 
                     ? 'bg-gray-700 border-gray-600 focus:ring-blue-500' 
                     : 'bg-white border-gray-300 focus:ring-blue-500'}`}
-                  placeholder="Ask anything ..."
+                  placeholder="Need help ...?"
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
                   disabled={isLoading}
